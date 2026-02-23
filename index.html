@@ -3,7 +3,38 @@
 <head>
     <title>Flexbox</title>
     <style>
+        .navbar {
+            display:flex;
+            flex-direction:row;
+        }
 
+        .row {
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:row;
+        }
+
+        .left-side {
+            flex:30%;
+        }
+
+        .main {
+            flex:30%;
+        }
+
+        .right-side {
+            flex:10%;
+        }
+
+        @media screen and (max-width:400px) {
+            .navbar {
+                flex-direction:column;
+            }
+
+        .row {
+            flex-direction:column;
+        }
+            
         .item {
             padding: 5px;
             margin: 5px;
